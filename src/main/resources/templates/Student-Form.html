@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+		<p>Students Form</p>
+		
+		<a th:href=@{students}" class="btn btn-primary btn-sm mb"-3>Student list</a>
+		
+		<form
+			action="#"
+			th:action="@{Student/save}"
+			th:object="${student}"
+			method="POST">
+			
+			<input
+					 type="text"
+					th:field="*{name}"
+					class="form-control mb-4 col-4"
+					placeholder="Name" />
+	
+			<button type="sumbit" class="btn btn-info col-2"></button>
+		</form>
+	
+</div>
+
+
+
+</body>
+</html>

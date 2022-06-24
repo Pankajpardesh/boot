@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+		<p>Students list</p>
+	
+	
+		<table> 
+		<tr>
+				<th>name</th>
+				<th>Email</th>
+				<th>mob no</th>
+		</tr>
+		<tbody>
+				<tr th:each="temp :${student}">
+				<td th:text="${temp.mobNo}"></td>
+				<td th:text="${temp.name}"></td>
+				<td th:text="${temp.Email}"></td>
+		
+		
+				</tr>
+		
+		</tbody>
+		
+		
+		</table>
+		<a th:href="@{students/add}"Add new Student</a>
+</div>
+
+
+
+</body>
+</html>
